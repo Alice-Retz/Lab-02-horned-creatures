@@ -1,9 +1,23 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 import images from './data.js';
+import ImageList from './ImageList.js';
 
-function App() {
-  return() {
+class App extends Component {
+  state = {
+    type: 'All',
+  };
+  
+  handleChange = (e) => {
+    this.setState({ type: e.target.value });
+  };
+  
+  render() {
+    const filteredImages = images.filter(
+      (image) => this.state.type === 'All' || image.type === this.state.type
+    );
+
+  return (
     <div className="App">
       <h1>Horned Creatures</h1>
       <h3>(Of a Sort)</h3>
@@ -15,8 +29,9 @@ function App() {
         <option value="Three">Three</option>
         <option value="Definitely More Than Three, yikes.">Definitely More Than Three, yikes.</option>
       </select>
-      <ImageList filteredSearch={filteredData} />
+      <ImageList filteredSearch={filteredImages} />
     </div>
+    );
   }
 }
 
