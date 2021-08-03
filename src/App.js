@@ -5,18 +5,29 @@ import ImageList from './ImageList.js';
 
 class App extends Component {
   state = {
-    type: 'All',
+    horns: 'All',
+    animalType: 'All',
+    sortOption: 'horns'
   };
   
   handleChange = (e) => {
-    this.setState({ type: e.target.value });
+    this.setState({ horns: e.target.value, sortOption: 'horns' });
   };
-  
+  handleNumberChange = (e) => {
+    this.setState({ animalType: e.target.value, sortOption: 'animalType' });
+  };
+
   render() {
     const filteredImages = creatureData.filter(
-      (image) => this.state.type === 'All' || image.type === this.state.type
+      (image) => this.state.horns === 'All' || image.horns === Number(this.state.horns)
     );
 
+    const filteredNumberImages = creatureData.filter(
+      (image) => this.state.animalType === 'All' || image.animalType === this.state.animalType
+    );
+
+  
+console.log(filteredImages)
   return (
     <div className="App">
       <h1>Horned Creatures</h1>
@@ -24,12 +35,20 @@ class App extends Component {
       <p>Sort by number of horns</p>
       <select onChange={this.handleChange}>
         <option value="All">All</option>
-        <option value="One">One</option>
-        <option value="Two">Two</option>
-        <option value="Three">Three</option>
-        <option value="Definitely More Than Three, yikes.">Definitely More Than Three, yikes.</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="100">Definitely More Than Three, yikes.</option>
       </select>
-      <ImageList filteredSearch={filteredImages} creatureData={creatureData}/>
+      <p>Sort by type of animal</p>
+      <select onChange={this.handleNumberChange}>
+        <option value="All">All</option>
+        <option value="mammal">mammal</option>
+        <option value="reptile">reptile</option>
+        <option value="abomination">abomination</option>
+        <option value="other">other</option>
+      </select>
+      <ImageList filteredSearch={this.state.sortOption === "horns" ? filteredImages : filteredNumberImages} creatureData={creatureData}/>
     </div>
     );
   }

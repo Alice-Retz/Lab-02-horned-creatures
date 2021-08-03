@@ -5,8 +5,8 @@ class ImageList extends Component {
     render() {
         return (
             <>
-                {this.props.creatureData.map((item) => {
-                    return <ImageItem key={item.name} image={item} />;
+                {this.props.filteredSearch.map((item) => {
+                    return <ImageItem key={item.id} image={item} />;
                 })}
             </>
         );

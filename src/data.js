@@ -7,6 +7,9 @@ const creatureData = [
     description: "A unicorn and a narwhal nuzzling their horns",
     keyword: "narwhal",
     horns: 1,
+    numberOfAnimals: 2,
+    animalType: "mammal",
+    image: "illustration",
   },
   {
     id:2,
@@ -15,7 +18,10 @@ const creatureData = [
     title: "Rhino Family",
     description: "Mother (or father) rhino with two babies",
     keyword: "rhino",
-    horns: 2
+    horns: 2,
+    numberOfAnimals: 3,
+    animalType: "mammal",
+    image: "photograph",
   },
   {
     id:3,
@@ -24,7 +30,10 @@ const creatureData = [
     title: "Unicorn Head",
     description: "Someone wearing a creepy unicorn head mask",
     keyword: "unicorn",
-    horns: 1
+    horns: 1,
+    numberOfAnimals: 1,
+    animalType: "abomination",
+    image: "photograph",
   },
   {
     id:4,
@@ -33,7 +42,10 @@ const creatureData = [
     title: "UniLego",
     description: "Lego figurine dressed in a unicorn outfit",
     keyword: "unilego",
-    horns: 1
+    horns: 1,
+    numberOfAnimals: 1,
+    animalType: "other",
+    image: "illustration",
   },
   {
     id:5,
@@ -42,7 +54,10 @@ const creatureData = [
     title: "Basically a unicorn",
     description: "A narwhal is basically a unicorn after all, right?",
     keyword: "narwhal",
-    horns: 1
+    horns: 1,
+    numberOfAnimals: 1,
+    animalType: "mammal",
+    image: "illustration",
   },
   {
     id:6,
@@ -51,7 +66,10 @@ const creatureData = [
     title: "#truth",
     description: "The truth behind narwhals",
     keyword: "narwhal",
-    horns: 1
+    horns: 1,
+    numberOfAnimals: 1,
+    animalType: "abomination",
+    image: "illustration",
   },
   {
     id:7,
@@ -60,7 +78,10 @@ const creatureData = [
     title: "Baby Rhino",
     description: "This is actually a figurine but it looks kinda real",
     keyword: "rhino",
-    horns: 2
+    horns: 2,
+    numberOfAnimals: 1,
+    animalType: "mammal",
+    image: "photograph",
   },
   {
     id:8,
@@ -70,7 +91,10 @@ const creatureData = [
     description:
       "Three horns but still, horns. And who doesn't like The Land Before Time?",
     keyword: "triceratops",
-    horns: 3
+    horns: 3,
+    numberOfAnimals: 1,
+    animalType: "other",
+    image: "illustration",
   },
   {
     id:9,
@@ -79,7 +103,10 @@ const creatureData = [
     title: "Narwhal costume",
     description: "A woman wearing a blue narwhal costume",
     keyword: "narwhal",
-    horns: 1
+    horns: 1,
+    numberOfAnimals: 1,
+    animalType: "mammal",
+    image: "photograph",
   },
   {
     id:10,
@@ -87,7 +114,10 @@ const creatureData = [
     title: "Rhino costume",
     description: "Mascots have to get their costumes somewhere",
     keyword: "rhino",
-    horns: 2
+    horns: 2,
+    numberOfAnimals: 1,
+    animalType: "mammal",
+    image: "photograph",
   },
   {
     id:11,
@@ -96,7 +126,10 @@ const creatureData = [
     title: "Believe",
     description: "I believe in unicorns, do you?",
     keyword: "unicorn",
-    horns: 1
+    horns: 1,
+    numberOfAnimals: 1,
+    animalType: "mammal",
+    image: "illustration",
   },
   {
     id:12,
@@ -106,7 +139,10 @@ const creatureData = [
     description:
       "These wild goats eat snakes, then secrete a foam that locals fight over for the antivenom properties -- how cool is that?",
     keyword: "markhor",
-    horns: 2
+    horns: 2,
+    numberOfAnimals: 1,
+    animalType: "mammal",
+    image: "photograph",
   },
   {
     id:13,
@@ -114,7 +150,10 @@ const creatureData = [
     title: "Baby markhor",
     description: "Even the babies are adorable",
     keyword: "markhor",
-    horns: 2
+    horns: 2,
+    numberOfAnimals: 1,
+    animalType: "mammal",
+    image: "photograph",
   },
   {
     id:14,
@@ -123,7 +162,10 @@ const creatureData = [
     title: "Mouflon",
     description: "Those horns though",
     keyword: "mouflon",
-    horns: 2
+    horns: 2,
+    numberOfAnimals: 1,
+    animalType: "mammal",
+    image: "photograph",
   },
   {
     id:15,
@@ -132,7 +174,10 @@ const creatureData = [
     description:
       "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
     keyword: "addax",
-    horns: 2
+    horns: 2,
+    numberOfAnimals: 1,
+    animalType: "mammal",
+    image: "photograph",
   },
   {
     id:16,
@@ -141,7 +186,10 @@ const creatureData = [
     title: "Baby mouflon",
     description: "The cuteness that is a baby mouflon asleep",
     keyword: "mouflon",
-    horns: 2
+    horns: 2,
+    numberOfAnimals: 2,
+    animalType: "mammal",
+    image: "photograph",
   },
   {
     id:17,
@@ -150,7 +198,10 @@ const creatureData = [
     title: "Happy Jackson's Chameleon",
     description: "These are really common in Hawaii",
     keyword: "chameleon",
-    horns: 2
+    horns: 3,
+    numberOfAnimals: 1,
+    animalType: "reptile",
+    image: "photograph",
   },
   {
     id:18,
@@ -159,7 +210,10 @@ const creatureData = [
     title: "Serious Jackson's Chameleon",
     description: "This one is very serious.",
     keyword: "chameleon",
-    horns: 3
+    horns: 3,
+    numberOfAnimals: 1,
+    animalType: "reptile",
+    image: "photograph",
   },
   {
     id:19,
@@ -168,7 +222,10 @@ const creatureData = [
     title: "Horned Lizard",
     description: "Fave food: ants",
     keyword: "lizard",
-    horns: 100
+    horns: 100,
+    numberOfAnimals: 1,
+    animalType: "reptile",
+    image: "photograph",
   },
   {
     id:20,
@@ -177,7 +234,10 @@ const creatureData = [
     title: "Smaug",
     description: "Fan illustration of Smaug from 'The Hobbit'",
     keyword: "dragon",
-    horns: 100
+    horns: 100,
+    numberOfAnimals: 1,
+    animalType: "other",
+    image: "illustration",
   }
 ];
 
