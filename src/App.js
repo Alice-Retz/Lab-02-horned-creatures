@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import images from './data.js';
+import creatureData from './data.js';
 import ImageList from './ImageList.js';
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
   };
   
   render() {
-    const filteredImages = images.filter(
+    const filteredImages = creatureData.filter(
       (image) => this.state.type === 'All' || image.type === this.state.type
     );
 
@@ -29,7 +29,7 @@ class App extends Component {
         <option value="Three">Three</option>
         <option value="Definitely More Than Three, yikes.">Definitely More Than Three, yikes.</option>
       </select>
-      <ImageList filteredSearch={filteredImages} />
+      <ImageList filteredSearch={filteredImages} creatureData={creatureData}/>
     </div>
     );
   }
