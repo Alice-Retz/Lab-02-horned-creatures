@@ -78,7 +78,7 @@ const creatureData = [
     title: "Baby Rhino",
     description: "This is actually a figurine but it looks kinda real",
     keyword: "rhino",
-    horns: 2,
+    horns: 1,
     numberOfAnimals: 1,
     animalType: "mammal",
     image: "photograph",
