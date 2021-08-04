@@ -3,10 +3,12 @@ import ImageItem from './ImageItem.js';
 
 class ImageList extends Component {
     render() {
+        const { creatureData } = this.props;
         return (
             <>
-                {this.props.filteredSearch.map((item) => {
-                    return <ImageItem key={item.id} image={item} />;
+                {creatureData.map((item) => {
+                    const { id, name, url } = item;
+                    return <ImageItem key={id} name={name} url={url} />;
                 })}
             </>
         );
